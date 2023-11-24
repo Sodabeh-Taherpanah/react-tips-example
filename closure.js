@@ -1,3 +1,6 @@
+//combinations of lexical scope and functions 
+//let access to a variable from a function that is enclosing scope   even that leaves the scope that it was declear
+
 // memory efficient
 
 dutyWithoutClosure(index){
@@ -18,7 +21,7 @@ dutyWithClosure(index){
 
 dutyWithoutClosure(120)
 dutyWithoutClosure(600)
-// dosen't create array value twice
+//doesn't create an array value twice
 const callFunc=dutyWithClosure()
 callFunc(8000)
 callFunc(20)

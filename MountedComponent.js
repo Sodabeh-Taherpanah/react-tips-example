@@ -1,3 +1,5 @@
+//custom hook : useIsMounted
+
 import { useCallback, useEffect, useRef } from "react";
 
 export function useIsMounted() {
@@ -10,6 +12,8 @@ export function useIsMounted() {
 
   return isMounted;
 }
+
+
 //usage 
 function ComponentA() {
   const [data, setData] = React.useState()
@@ -17,8 +21,8 @@ function ComponentA() {
 
   React.useEffect(() => {
     //for example we can fetch().then((data) => {
-      // at this point the component may already have been removed from the tree
-      // so we need to check first before updating the component state
+      // at this point the component may already have been removed from the tree by a flag from the parent or moved to another page
+      //So we need to check first before updating the component state
       if (isMounted()) {
         setData(data)
      // }

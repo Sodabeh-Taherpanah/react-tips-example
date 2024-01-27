@@ -1,1 +1,11 @@
-
+let text = "Hello sudy"; 
+//reverse the  string  
+const myArr = text.split("");
+console.log(myArr);
+text = "";
+for (let i = 0; i < myArr.length / 2; i++) {
+  let b = myArr[i];
+  let c = myArr[myArr.length - (i + 1)];
+  myArr[myArr.length - (i + 1)] = b;
+  myArr[i] = c;
+}

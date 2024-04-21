@@ -22,3 +22,11 @@ for(item of 'hello sudy')    //iterating  for strings
 {
 console.log(item)
 }
+
+const arr=[1,2,9]
+arr.at(0)   //1
+arr.at(1) //2
+arr.at(-2)  // 2
+
+arr.findLast  & findLastIndex & toSpliced  & with  are very useful
+toreverserd && toSorted also keep original array 

@@ -22,3 +22,8 @@ object.entries(obj).forEach(e=>{
 object.entries(obj).map(e=>{
   return   e[1]+e[0].replace('user1',"me');   [alime, mina]   
 })
+
+for(item in obj)   // enumerating  for objects
+  {
+    console.log(item)
+  }

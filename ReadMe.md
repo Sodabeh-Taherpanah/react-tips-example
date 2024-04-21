@@ -8,3 +8,5 @@ webpack it bundles modules yo one  for browser same as browsify and create bundl
 but on common js +browsify we export modules form every java script file and then in one  bundle js file use require to import it.
 
 https://medium.com/sungthecoder/javascript-module-module-loader-module-bundler-es6-module-confused-yet-6343510e7bde
+https://github.com/getify/You-Dont-Know-JS
+https://javascript.info/

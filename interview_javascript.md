@@ -106,6 +106,37 @@ x = 23;
 To avoid hoisting, you can run javascript in strict mode by using “use strict”
 
 
+
+*pure functions**
+Pure functions are functions that accept an input and returns a value without modifying any data outside its scope(Side Effects).
+Benefits of Pure Functions:
+
+    Easier to test: 
+    Predictability: the function's behavior is predictable and doesn't affect the external environment.
+    Reusability: They can be reused in different contexts.
+    same as redux reducer.
+    
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, 3)); // Always returns 5 ,This function is pure because it doesn't depend on or modify anything outside of it, and it consistently returns the same result for the same inputs.
+
+let count = 0;
+
+function increment() {
+  count++;
+  return count;
+}
+console.log(increment()); // Impure, modifies external 'count'
+
+function impure(arg) {
+  let f = finalR.s _ arg
+} //this  isn’t a pure function because it didn’t return a value
+function impure(arg) {
+  return finalR.s _ 3
+}//is impure, though it didn’t affect any external state, its output return finalR.s _ 3 isn't dependent on the input arg.
+
+
 **IIFE**
 
 An Immediately Invoked Function  is a function that runs as soon as it is defined.

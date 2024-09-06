@@ -22,3 +22,12 @@ const pureAddition = (num) => (newArr) => [...newArr, num];
 pureAddition(10)([]);
 
 typeof true;  // "boolean"  typeof undefined;  // Returns: "undefined"   typeof [1, 2, 3];  // Returns: "object"   typeof undeclaredVariable; // Returns: "undefined" 
+
+
+isNaN("Hello")  //  true.    isNaN(undefined) //  true
+isNaN(345)   //  false
+isNaN('1')  //  false, since '1' is converted to Number type which results in 0 ( a number) 
+isNaN(true) //  false, since true converted to Number type results in 1 ( a number)
+isNaN(false) //  false
+
+

@@ -318,13 +318,22 @@ genFunc().next(); // Returns {value: 3, done:false}
     The output result of the Generator function is always value: X, done: Boolean, but the return value of the Async function is always an assurance or throws an error.
 
 **promise**
-romises are used to handle asynchronous operations like server requests
+promises are used to handle asynchronous operations like server requests
 then() method is used to access the result when the promise is fulfilled.
 catch() method is used to access the result/error when the promise is rejected.
+One of the advantages of promises is that they are a much cleaner syntax. Before we had promises, we could easily get stuck in callback hell 🌋
 Promise object has four states -
 
     Pending - Initial state of promise. This state represents that the promise has neither been fulfilled nor been rejected, it is in the pending state.
     Fulfilled - This state represents that the promise has been fulfilled, meaning the async operation is completed.
     Rejected - This state represents that the promise has been rejected for some reason, meaning the async operation has failed.
     Settled - This state represents that the promise has been either rejected or fulfilled.
+
+**storage***
+
+sessionStorage: You lose your data when your session is over, like when you close the browser on the tab.
+localStorage: Data persists even after closing your session
+
+![Uploading storage.jpg…]()
+
 

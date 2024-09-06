@@ -31,3 +31,24 @@ isNaN(true) //  false, since true converted to Number type results in 1 ( a numb
 isNaN(false) //  false
 
 
+//this problem
+ for (var i = 1; i <= 3; i++) {
+    setTimeout(function () {
+      console.log(i)
+    }, i * 1000)
+  }
+
+// output
+6
+6
+6
+use let instead var ,var is globally scoped but let is locally scoped. So for let a new i is created for every iteration.
+
+The Null-Coalescing operator (??), provides a default value if the evaluated value is either undefined or null
+
+var foo = { n: 1 }
+var bar = foo
+foo.x = foo = { n: 2 }   
+console.log(foo).    //{n:2}
+console.log(bar)   // {n:1,x:{n:2}}
+

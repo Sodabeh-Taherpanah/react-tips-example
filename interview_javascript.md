@@ -253,7 +253,7 @@ for(let i=0; i<2; i++){
 
 console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
 
-Scope Chain: JavaScript engine also uses Scope to find variables. 
+Scope Chain: The JavaScript engine also uses Scope to find variables. 
 var y = 24;
 
 function favFunction(){
@@ -284,7 +284,7 @@ add(3)(4)
 
 
 ** Constructor functions  **
-they are used to create objects in javascript.
+they are used to create objects in JavaScript.
 function Person(name,age,gender){
   this.name = name;
 }
@@ -296,7 +296,7 @@ var person2 = new Person("Courtney");
 console.log(person2);
 
 **arrow or function **** 
-arrow don’t need to use the return keyword as well .
+The arrow doesn’t need to use the return keyword as well.
 Also, for functions having just one line of code, curly braces { } can be omitted.
 var obj1 = {
   valueOfThis: function(){
@@ -310,7 +310,7 @@ var obj2 = {
 }
 
 obj1.valueOfThis(); // Will return the object obj1
-obj2.valueOfThis(); // Will return window/global object , there is no binding of this keyword. This keyword inside an arrow function does not refer to the object calling it. It rather inherits its value from the parent scope which is the window object in this case. Therefore, in the code above, obj2.valueOfThis() returns the window object.
+obj2.valueOfThis(); // Will return window/global object, there is no binding of this keyword. This keyword inside an arrow function does not refer to the object calling it. It rather inherits its value from the parent scope which is the window object in this case. Therefore, in the code above, obj2.valueOfThis() returns the window object.
 
 
 **protoType**
@@ -345,12 +345,12 @@ genFunc().next(); // Returns {value: 3, done:false}
 
 
     Generator functions are run by their generator yield by yield which means one output at a time, whereas Async-await functions are executed sequentially one after another.
-    Async/await provides a certain use case for Generators easier to execute.
+    Async/await provides a certain use case for Generators that are easier to execute.
     The output result of the Generator function is always value: X, done: Boolean, but the return value of the Async function is always an assurance or throws an error.
 
 **promise**
 promises are used to handle asynchronous operations like server requests
-then() method is used to access the result when the promise is fulfilled.
+then () method is used to access the result when the promise is fulfilled.
 catch() method is used to access the result/error when the promise is rejected.
 One of the advantages of promises is that they are a much cleaner syntax. Before we had promises, we could easily get stuck in callback hell 🌋
 Promise object has four states -
@@ -367,4 +367,5 @@ localStorage: Data persists even after closing your session
 
 ![Uploading storage.jpg…]()
 
-
+**pure component**
+the pure components are the components which render the same output for the same state and props. In function components, you can achieve these pure components through memoized React.memo() API 

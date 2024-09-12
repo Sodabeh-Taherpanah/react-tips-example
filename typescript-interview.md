@@ -1,0 +1,1 @@
+In TypeScript, the getters and setters are two terms that can be used to get and set the value of the class members, respectively. However, users can access the public members of the class directly via the dot operator by taking the object of the particular class as a reference.

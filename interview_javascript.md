@@ -23,10 +23,10 @@ The history object of a browser can be used to switch to history pages such as b
     Non- Primitive data types :Object,Array
 Symbol,It is used to store an anonymous and unique value.
 
-## This is a h2 header
+
 ###### This is a h6 header
 
-**What Are Web Workers?** 
+## **What Are Web Workers?** 
 
 Traditionally, JavaScript is a single-threaded language. For example, 
 if you have code trying to animate a DOM element, when you trying to change a variable have to wait for the animation to end.

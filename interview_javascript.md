@@ -379,3 +379,16 @@ when some components need to share state and the child components are requires t
 
 Render props:That solve logic repetition problem with share function between components using a prop. Then parent and children share some state and logic together. 
 
+*generic functions**
+example :HOC  , Dynamic Data Types with JavaScript's:Generic Data Processor,Generic Object Manipulation
+A generic function is one that works for multiple types of inputs, making it more reusable.
+function sortArray(arr, compareFn) {
+  return arr.sort(compareFn);
+}
+
+const strings = ["apple", "banana", "cherry"];
+console.log(sortArray(strings, (a, b) => a.localeCompare(b))); // ["apple", "banana", "cherry"]
+
+const objects = [{ age: 30 }, { age: 20 }, { age: 40 }];
+console.log(sortArray(objects, (a, b) => a.age - b.age)); // [{ age: 20 }, { age: 30 }, { age: 40 }]
+

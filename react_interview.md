@@ -1,3 +1,5 @@
+
+features of react : jsx, performance(minimize the number of costy dom to update UI),virtual Dom, one way binding,component base
 ** useLayoutEffect**, on the other hand, runs synchronously after a render but before the screen is updated.runs, and React waits for it to finish.The screen is visually updated.
 **useLayoutEffect** can cause performance issues if used excessively because it delays painting.
 

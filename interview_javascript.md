@@ -372,4 +372,4 @@ the pure components are the components which render the same output for the same
 
 
 ** arrow function** 
-Use to keep the context of this
+Use to keep the context of this .No this Binding: Arrow functions do not have their own this context. Instead, they inherit the this value from their surrounding lexical scope. This makes arrow functions particularly useful in situations like callback functions or within object methods where the traditional function may not have access to the desired this value.

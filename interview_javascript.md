@@ -369,3 +369,7 @@ localStorage: Data persists even after closing your session
 
 **pure component**
 the pure components are the components which render the same output for the same state and props. In function components, you can achieve these pure components through memoized React.memo() API 
+
+
+** arrow function** 
+Use to keep the context of this

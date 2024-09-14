@@ -53,13 +53,13 @@ some of the features of service workers:
 
 **closure**
 
-In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope.
+In JavaScript, we need closures when a variable defined outside the scope in reference is accessed from some inner scope.
 
 **Creating Objects in JavaScript**
 
     By object literal : object={property1:value1,property2:value2.....propertyN:valueN}
-    By creating instance of Object directly (using new keyword) : var objectname=new Object(); 
-    By using an object constructor (using new keyword) : function emp(id,name,salary){  this.id=id;  }     e=new emp(103);
+    By creating an instance of Object directly (using the new keyword) : var objectname=new Object(); 
+    By using an object constructor (using the new keyword): function emp(id, name,salary){  this.id=id;  }     e=new emp(103);
 
     How to create an array in JavaScript?
 
@@ -373,3 +373,9 @@ the pure components are the components which render the same output for the same
 
 ** arrow function** 
 Use to keep the context of this .No this Binding: Arrow functions do not have their own this context. Instead, they inherit the this value from their surrounding lexical scope. This makes arrow functions particularly useful in situations like callback functions or within object methods where the traditional function may not have access to the desired this value.
+
+**Compound Component** :
+when some components need to share state and the child components are requires to be inside the scope of parent for example dropdown.
+
+Render props:That solve logic repetition problem with share function between components using a prop. Then parent and children share some state and logic together. 
+

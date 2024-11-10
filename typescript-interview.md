@@ -9,7 +9,7 @@ active,
 Deactive
 }   
 alternative of enum is union :
-enums statusT{
+type statusT=
 "active" | 
 "Deactive"
 }  
@@ -40,7 +40,45 @@ tips:
 function getId<T>(items:T[]):number{
   return items.reduces((max,e)=>e.id > max ? max: e.id+0)+1
 }
-here we got an error , property id is not on Type T, so we convert function definition to  ---> getId<T extend {id:number }>(items:T[]):number....
+here we got an error, property id is not on Type T, so we convert function definition to  ---> getId<T extend {id:number }>(items:T[]):number....
 
 
+**keyof**
+type contactFiled=keyof ContactType;
+function getValue<T,U extends keyof T>(source:T,propertyName:U){
+return source(propertyName)
+}
+const val=getValue({min:123, name:"city"},"name").  ==> second arg can me name or min , 
 
+
+**typeof**
+when there is no info about  a value, object.. especially in dynamic code
+const objA={min:5,max:598}
+function save(val:typeof objA){
+}
+ or fetch ,...
+function funcB(val:string | contactType):contactType{
+ if (typeof val==="object")
+ {
+ }
+ else{
+   return{ id:0,name: val,status:"active"}
+}
+
+}
+
+
+interface Address {
+    street: string;
+    province: string;
+    postalCode: string;
+}
+
+interface Contact {
+    id: number;
+    name: string;
+    status: ContactStatus;
+    address: Address;
+}
+  //index access types
+type Awesome = Contact["address"]["postalCode"]

@@ -127,7 +127,7 @@ const ButtonWithSomeLogic = withSomeLogic(Button);
 
 
 Use Case: 
-Adding Conditional Authentication to a Component  :  return isAuthenticated ? <WrappedComponent {...otherProps} /> : null;   //WrappedComponent can be userprofile
+Adding Conditional Authentication to a Component  :  return isAuthenticated ? <WrappedComponent {...otherProps} /> : null;   //WrappedComponent can be userطب
 for logging :
 const withLogging = (WrappedComponent) => {
   return (props) => {
